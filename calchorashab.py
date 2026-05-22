@@ -68,13 +68,13 @@ col1, col2 = st.columns(2)
 
 with col1:
     st.subheader("Fecha de Inicio")
-    fecha_ini = st.date_input("Selecciona el día de inicio", datetime.now().date(), format="dd-mm-yyyy", key="f_ini")
+    fecha_ini = st.date_input("Selecciona el día de inicio", datetime.now().date(), format="DD-MM-YYYY", key="f_ini")
     hora_ini = st.time_input("Selecciona la hora de inicio", time(9, 30), key="h_ini")
     dt_inicio = datetime.combine(fecha_ini, hora_ini)
 
 with col2:
     st.subheader("Fecha de Término")
-    fecha_fin = st.date_input("Selecciona el día de término", datetime.now().date(), format="dd-mm-yyyy", key="f_fin")
+    fecha_fin = st.date_input("Selecciona el día de término", datetime.now().date(), format="DD-MM-YYYY", key="f_fin")
     hora_fin = st.time_input("Selecciona la hora de término", time(18, 30), key="h_fin")
     dt_fin = datetime.combine(fecha_fin, hora_fin)
 
