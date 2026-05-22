@@ -68,7 +68,7 @@ col1, col2 = st.columns(2)
 
 with col1:
     st.subheader("Fecha de Inicio")
-    fecha_ini = st.date_input("Selecciona el día de inicio", datetime.now().date(), key="f_ini")
+    fecha_ini = st.date_input("Selecciona el día de inicio", datetime.now().date(), key="f_ini" format="dd-mm-yyyy")
     hora_ini = st.time_input("Selecciona la hora de inicio", time(9, 30), key="h_ini")
     dt_inicio = datetime.combine(fecha_ini, hora_ini)
 
