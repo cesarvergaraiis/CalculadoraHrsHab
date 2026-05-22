@@ -91,4 +91,4 @@ if st.button("Calcular Tiempo Hábil", type="primary"):
         minutos_restantes = round((total_horas - horas_enteras) * 60)
         
         st.metric(label="Total Horas Hábiles", value=f"{total_horas:.2f} hrs")
-        st.info(f"Equivale a **{horas_enteras} horas y {minutos_restantes} minutos** hábiles acumulados.")
+        st.info(f"Equivale a **{horas_enteras} horas y {minutos_restantes} minutos** hábiles.")
