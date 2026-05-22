@@ -74,7 +74,7 @@ with col1:
 
 with col2:
     st.subheader("Fecha de Término")
-    fecha_fin = st.date_input("Selecciona el día de término", datetime.now().date(), key="f_fin")
+    fecha_fin = st.date_input("Selecciona el día de término", datetime.now().date(), key="f_fin", format="dd-mm-yyyy")
     hora_fin = st.time_input("Selecciona la hora de término", time(18, 30), key="h_fin")
     dt_fin = datetime.combine(fecha_fin, hora_fin)
 
