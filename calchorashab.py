@@ -1,6 +1,6 @@
 import streamlit as st
 from datetime import datetime, timedelta, time
-
+page_icon="👥"
 def es_hora_habil(dt: datetime) -> bool:
     """Determina si un datetime cae dentro de la jornada laboral,
 
