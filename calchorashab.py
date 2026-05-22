@@ -6,7 +6,7 @@ def es_hora_habil(dt: datetime) -> bool:
 
     aplicando el horario de viernes diferenciado solo de enero a septiembre.
     """
-    dia_semana = dt.weekday()  # 0 = Lunes, 4 = Viernes, 5 = Sábado, 6 = Domingo
+    dia_semana = dt.weekday()  # 0 = Lunes, 4 = Viernes, 5 = Sábado, 6 = Domingo 
     mes = dt.month             # 1 = Enero, 9 = Septiembre, 10 = Octubre...
     
     # Fines de semana libre
